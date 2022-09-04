@@ -3,21 +3,21 @@ import React from 'react'
 function TagsContainer() {
 
     var popularTags = [
-        { tagName: "Tag Name", tagUses: "100" },
-        { tagName: "Tag Name", tagUses: "100" },
-        { tagName: "Tag Name", tagUses: "100" },
-        { tagName: "Tag Name", tagUses: "100" },
-        { tagName: "Tag Name", tagUses: "100" },
+        { id: 1, tagName: "Tag Name", tagUses: "100" },
+        { id: 2, tagName: "Tag Name", tagUses: "100" },
+        { id: 3, tagName: "Tag Name", tagUses: "100" },
+        { id: 4, tagName: "Tag Name", tagUses: "100" },
+        { id: 5, tagName: "Tag Name", tagUses: "100" },
     ];
 
     var tags = [
-        { tagName: "Tag Name", tagUses: "100" },
-        { tagName: "Tag Name", tagUses: "100" },
-        { tagName: "Tag Name", tagUses: "100" },
-        { tagName: "Tag Name", tagUses: "100" },
-        { tagName: "Tag Name", tagUses: "100" },
-        { tagName: "Tag Name", tagUses: "100" },
-        { tagName: "Tag Name", tagUses: "100" },
+        { id: 1, tagName: "Tag Name", tagUses: "100" },
+        { id: 2, tagName: "Tag Name", tagUses: "100" },
+        { id: 3, tagName: "Tag Name", tagUses: "100" },
+        { id: 4, tagName: "Tag Name", tagUses: "100" },
+        { id: 5, tagName: "Tag Name", tagUses: "100" },
+        { id: 6, tagName: "Tag Name", tagUses: "100" },
+        { id: 7, tagName: "Tag Name", tagUses: "100" },
     ];
 
     return (
@@ -33,7 +33,7 @@ function TagsContainer() {
                         {
                             popularTags.map(
                                 tag =>
-                                    <li className='list-group-item d-flex justify-content-between align-items-center border border-dark rounded-5 p-1 m-1 text-light bg-dark'>
+                                    <li key={tag.id} className='list-group-item d-flex justify-content-between align-items-center border border-dark rounded-5 p-1 m-1 text-light bg-dark'>
                                         <span className='px-1'>{tag.tagName}</span>
                                         <span className='badge bg-secondary mx-1'>{tag.tagUses}</span>
                                     </li>
@@ -46,9 +46,9 @@ function TagsContainer() {
 
                         {tags.map(
                                 tag =>
-                                    <li className='my-1'>
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text">
+                                    <li key={tag.id} className='my-1'>
+                                        <div className="input-group-prepend">
+                                            <div className="input-group-text">
                                                 <input type="checkbox" aria-label="Checkbox for following text input" />
                                                 <span className='px-2'>{tag.tagName}</span>
                                             </div>
