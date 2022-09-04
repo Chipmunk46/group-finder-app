@@ -3,8 +3,8 @@ import React from 'react'
 function Navbar() {
     return (
         <>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-4">
+                <a class="navbar-brand mx-3" href="#">GroupUp</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -13,9 +13,6 @@ function Navbar() {
                         <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                         <a class="nav-item nav-link" href="#">News</a>
                     </div>
-                </div>
-                <div className="nav-item">
-                    <a className="nav-link" href="#">Profile</a>
                 </div>
             </nav>
         </>
