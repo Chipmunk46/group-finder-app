@@ -3,6 +3,7 @@ import HomeProfile from '../components/HomeProfile'
 import PartyCardHolder from '../components/PartyCardHolder'
 import PartySearch from '../components/PartySearch'
 import TagsContainer from '../components/TagsContainer'
+import ProfileCard from '../components/ProfileCard'
 
 function Home() {
   return (
@@ -19,7 +20,7 @@ function Home() {
           </div>
           <div className="col-3">
             <div className="row">
-              <HomeProfile/>
+              <ProfileCard />
             </div>
             <div className="row">
               <TagsContainer/>

@@ -20,8 +20,7 @@ function HomeProfile() {
                     <p>User Title</p>
                 </div>
                 <div className="col-6">
-                    <a className='btn btn-secondary' href="">View Profile</a>
-                    <a href="#">Logout</a>
+                    <a href="#" className='btn btn-secondary btn-sm'>Logout</a>
                 </div>
             </div>
         </div>

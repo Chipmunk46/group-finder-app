@@ -16,7 +16,7 @@ function Profile() {
                         <EventsHolder/>
                     </div>
                 </div>
-                <div className="col-4">
+                <div className="col-3">
                     <div className="row">
                         <ProfileCard/>
                     </div>

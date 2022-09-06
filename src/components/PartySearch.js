@@ -1,4 +1,5 @@
 import React from 'react'
+import CreateEventModal from '../components/CreateEventModal'
 
 function PartySearch() {
     return (
@@ -11,7 +12,8 @@ function PartySearch() {
                         </form>
                     </div>
                     <div className="col-2 d-flex justify-content-left">
-                        <button className='btn btn-secondary'>Create Event</button>
+                        <button className='btn btn-secondary' data-bs-toggle="modal" data-bs-target="#createModal">Create Event</button>
+                        <CreateEventModal/>
                     </div>
                 </div>
             </div>
